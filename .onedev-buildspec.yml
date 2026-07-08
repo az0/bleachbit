@@ -1,4 +1,0 @@
-version: 40
-imports:
-- projectPath: OpenMandriva/Packages
-  revision: mirroring
