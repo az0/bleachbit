@@ -1,5 +1,5 @@
 Name:		bleachbit
-Version:	5.1.2
+Version:	6.0.2
 Release:	1
 Summary:	A tool to remove unnecessary files, free disk space and maintain privacy
 Group:		System/Configuration/Other
