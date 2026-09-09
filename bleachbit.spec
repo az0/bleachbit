@@ -1,6 +1,6 @@
 Name:		bleachbit
 Version:	6.0.4
-Release:	1
+Release:	2
 Summary:	A tool to remove unnecessary files, free disk space and maintain privacy
 Group:		System/Configuration/Other
 License:	GPLv3
@@ -57,8 +57,9 @@ mkdir -p %{buildroot}%{_mandir}/man1
 install -m 644 %{SOURCE1} %{buildroot}%{_mandir}/man1
 
 chmod 644 %{buildroot}%{_datadir}/%{name}/Worker.py
-chmod 755 %{buildroot}%{_datadir}/%{name}/CLI.py
-chmod 755 %{buildroot}%{_datadir}/%{name}/GUI.py
+chmod 644 %{buildroot}%{_datadir}/%{name}/CLI.py
+chmod 644 %{buildroot}%{_datadir}/%{name}/GUI.py
+sed -i '1s|^#!.*|#!/usr/bin/python|' %{buildroot}%{_bindir}/%{name}
 
 #rm %{buildroot}%{_datadir}/%{name}/*.pyo
 
